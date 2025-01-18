@@ -41,16 +41,20 @@
                             <div class="info-box">
                                 <i class="bx bx-envelope"></i>
                                 <h3>Email Us</h3>
-                                <p>info@example.com<br>
-                                    contact@example.com</p>
+                                <p>
+                                    info@example.com<br>
+                                    contact@example.com
+                                </p>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="info-box">
                                 <i class="bx bx-phone-call"></i>
                                 <h3>Call Us</h3>
-                                <p>+1 5589 55488 55<br>
-                                    +1 6678 254445 41</p>
+                                <p>
+                                    +1 5589 55488 55<br>
+                                    +1 6678 254445 41
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -61,29 +65,47 @@
                     <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                         <div class="form-row">
                             <div class="col-md-6 form-group">
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                                <div class="validate"></div>
+                                <%--<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />--%>
+                                <asp:TextBox ID="NameTextBox" CssClass="form-control" placeholder="Your Name" runat="server"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="NameRequiredFieldValidator" ControlToValidate="NameTextBox" runat="server" ErrorMessage="Name is required" Display="Dynamic"  SetFocusOnError="True" ForeColor="Red"></asp:RequiredFieldValidator>
+                                <%--<div class="validate"></div>--%>
                             </div>
                             <div class="col-md-6 form-group">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                                <div class="validate"></div>
+                                <%--<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />--%>
+                                <asp:TextBox ID="MailTextBox" CssClass="form-control" placeholder="Your Email" runat="server"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="EmailRequiredFieldValidator" ControlToValidate="MailTextBox" runat="server" ErrorMessage="Email is required" Display="Dynamic"  SetFocusOnError="True" ForeColor="Red"></asp:RequiredFieldValidator>                                
+                                <asp:RegularExpressionValidator ID="EmailRegularExpressionValidator" ControlToValidate="MailTextBox" runat="server" ErrorMessage="Invalid Email" Display="Dynamic"  SetFocusOnError="True" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+                                <%--<div class="validate"></div>--%>
                             </div>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                            <div class="validate"></div>
+                            <%--<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />--%>
+                            <%--<asp:TextBox ID="SubjectTextBox" CssClass="form-control" placeholder="Your Subject" runat="server"></asp:TextBox>--%>
+                            <asp:DropDownList ID="SubjectDropDownList" CssClass="form-control" runat="server">
+                                <asp:ListItem>Select </asp:ListItem>
+                                <asp:ListItem>Suggestion</asp:ListItem>
+                                <asp:ListItem>Feedback</asp:ListItem>
+                                <asp:ListItem>Complaint</asp:ListItem>
+                            </asp:DropDownList>
+                                <asp:RequiredFieldValidator ID="SubjectRequiredFieldValidator" ControlToValidate="SubjectDropDownList" InitialValue="Select" runat="server" ErrorMessage="Subject is required" Display="Dynamic"  SetFocusOnError="True" ForeColor="Red"></asp:RequiredFieldValidator>                                                            
+                            <%--<div class="validate"></div>--%>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                            <div class="validate"></div>
+                            <%--<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>--%>
+                            <asp:TextBox ID="MessageTextBox" CssClass="form-control" Columns="50" Rows="5" placeholder="Enter Message" TextMode="MultiLine" runat="server"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ControlToValidate="MessageTextBox" runat="server" ErrorMessage="Message is required" Display="Dynamic"  SetFocusOnError="True" ForeColor="Red"></asp:RequiredFieldValidator>                                                            
+                            <%--<div class="validate"></div>--%>
                         </div>
-                        <div class="mb-3">
+                        <%--<div class="mb-3">
                             <div class="loading">Loading</div>
                             <div class="error-message"></div>
                             <div class="sent-message">Your message has been sent. Thank you!</div>
-                        </div>
+                        </div>--%>
                         <div class="text-center">
-                            <button type="submit">Send Message</button></div>
+                            <%--<button type="submit">Send Message</button>--%>
+                            <asp:Button ID="SubmitButton" CssClass="btn btn-info" runat="server" Text="Send Message" OnClick="SubmitButton_Click" />
+
+                        </div>
                     </form>
                 </div>
 
