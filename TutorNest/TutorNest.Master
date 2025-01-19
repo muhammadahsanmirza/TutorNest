@@ -29,6 +29,9 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="dist/sweetalert2.min.css" rel="stylesheet" />
+    <script src="dist/sweetalert2.min.js"></script>
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -94,11 +97,11 @@
                             <h4>Our Newsletter</h4>
                             <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
                         </div>
-                        <div class="col-lg-6">
+<%--                        <div class="col-lg-6">
                             <form action="" method="post">
                                 <input type="email" name="email"><input type="submit" value="Subscribe">
                             </form>
-                        </div>
+                        </div>--%>
                     </div>
                 </div>
             </div>
@@ -134,18 +137,18 @@
                             <p>
                                 A108 Adam Street
                                 <br>
-                                New York, NY 535022<br>
-                                United States
+                                Gulberg Greens, Islamabad<br>
+                                Pakistan
                                 <br>
                                 <br>
-                                <strong>Phone:</strong> +1 5589 55488 55<br>
-                                <strong>Email:</strong> info@example.com<br>
+                                <strong>Phone:</strong> 0304 5594554<br>
+                                <strong>Email:</strong> work.muhammadahsan@gmail.com<br>
                             </p>
 
                         </div>
 
                         <div class="col-lg-3 col-md-6 footer-info">
-                            <h3>About Moderna</h3>
+                            <h3>About Tutor Nest</h3>
                             <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
                             <div class="social-links mt-3">
                                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>

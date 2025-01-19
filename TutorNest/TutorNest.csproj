@@ -69,6 +69,9 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="about.html" />
+    <Content Include="admin\AdminHomeScreen.aspx" />
+    <Content Include="admin\AdminLogin.aspx" />
+    <Content Include="admin\AdminLoginStyleSheet.css" />
     <Content Include="assets\css\style.css" />
     <Content Include="assets\img\about.jpg" />
     <Content Include="assets\img\apple-touch-icon.png" />
@@ -173,6 +176,16 @@
     <Content Include="Contact.aspx" />
     <Content Include="contact.html" />
     <Content Include="Default.aspx" />
+    <Content Include="dist\sweetalert2.all.js" />
+    <Content Include="dist\sweetalert2.all.min.js" />
+    <Content Include="dist\sweetalert2.css" />
+    <Content Include="dist\sweetalert2.esm.all.js" />
+    <Content Include="dist\sweetalert2.esm.all.min.js" />
+    <Content Include="dist\sweetalert2.esm.js" />
+    <Content Include="dist\sweetalert2.esm.min.js" />
+    <Content Include="dist\sweetalert2.js" />
+    <Content Include="dist\sweetalert2.min.css" />
+    <Content Include="dist\sweetalert2.min.js" />
     <Content Include="forms\Readme.txt" />
     <Content Include="index-2.html" />
     <Content Include="index.html" />
@@ -190,6 +203,27 @@
     </Compile>
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\AdminDashboard.Master.cs">
+      <DependentUpon>AdminDashboard.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\AdminDashboard.Master.designer.cs">
+      <DependentUpon>AdminDashboard.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\AdminHomeScreen.aspx.cs">
+      <DependentUpon>AdminHomeScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\AdminHomeScreen.aspx.designer.cs">
+      <DependentUpon>AdminHomeScreen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -238,6 +272,7 @@
     <Content Include="forms\contact.php" />
     <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <Content Include="obj\Debug\TutorNest.csproj.AssemblyReference.cache" />
+    <Content Include="admin\AdminDashboard.Master" />
     <None Include="packages.config" />
     <Content Include="TutorNest.Master" />
     <None Include="Web.Debug.config">
