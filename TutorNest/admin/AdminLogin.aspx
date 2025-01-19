@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" />
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link href="AdminLoginStyleSheet.css" rel="stylesheet" />
+
+    <link href="../dist/sweetalert2.min.css" rel="stylesheet" />
+    <script src="../dist/sweetalert2.min.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">

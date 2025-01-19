@@ -42,8 +42,8 @@ namespace TutorNest.admin
                         }
                         else
                         {
-                            Response.Write("<script>alert('Login Failed')</script>");
-                            //ScriptManager.RegisterStartupScript(this, this.GetType(), "Popup", "errorSubmission();", true);
+                            //Response.Write("<script>alert('Login Failed')</script>");
+                            ScriptManager.RegisterStartupScript(this, this.GetType(), "Popup", "Swal.fire({title: 'Incorrect Credentials!', text: 'Username or Password is Incorrect ', icon: 'error'});", true);
                         }
 
                         con.Close();

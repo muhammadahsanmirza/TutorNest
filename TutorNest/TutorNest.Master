@@ -52,8 +52,6 @@
                         <li class="active"><a href="Default.aspx">Home</a></li>
                         <li><a href="About.aspx">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="team.html">Team</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li class="drop-down"><a href="">Drop Down</a>
                             <ul>
@@ -73,6 +71,9 @@
                             </ul>
                         </li>
                         <li><a href="Contact.aspx">Contact Us</a></li>
+                        <li><a href="StudentSignup.aspx" class="btn btn-info mx-2">Signup</a></li>
+                        <li><a href="StudentLogin.aspx" class="btn btn-info mx-2">Login</a></li>
+
                     </ul>
                 </nav>
                 <!-- .nav-menu -->
