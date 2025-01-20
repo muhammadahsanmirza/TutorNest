@@ -8,10 +8,17 @@
     <div class="registration-form">
         <div class="form-container">
             <!-- Icon at the top -->
-            <div class="form-icon">
+            <div class="form-icon mbw-0">
                 <span><i class="icon icon-notebook"></i></span>
             </div>
-            <h2 class="text-center">Student Registration</h2>
+            <!-- Sign up as Tutor Button in Top-Right Corner -->
+            <div class="tutor-signup-link text-right mx-0">
+                <asp:HyperLink runat="server" ID="lnkTutorSignup" NavigateUrl="~/TutorSignup.aspx" CssClass="btn btn-sm btn-info">
+                    <i class=""></i> Sign up as Tutor
+                </asp:HyperLink>
+            </div>
+
+            <h2 class="text-center mx-0">Student Registration</h2>
 
             <!-- First Row: Name, Father Name, Surname -->
             <div class="row">
