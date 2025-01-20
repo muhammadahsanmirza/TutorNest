@@ -190,10 +190,13 @@
     <Content Include="forms\Readme.txt" />
     <Content Include="index-2.html" />
     <Content Include="index.html" />
+    <Content Include="Logout.aspx" />
     <Content Include="portfolio-details.html" />
     <Content Include="portfolio.html" />
     <Content Include="Readme.txt" />
     <Content Include="services.html" />
+    <Content Include="StudentLogin.aspx" />
+    <Content Include="StudentLoginStylesheet.css" />
     <Content Include="StudentSignup.aspx" />
     <Content Include="StudentSignupStylesheet.css" />
     <Content Include="student\StudentHomeScreen.aspx" />
@@ -250,8 +253,22 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
     <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentLogin.aspx.cs">
+      <DependentUpon>StudentLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentLogin.aspx.designer.cs">
+      <DependentUpon>StudentLogin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="StudentSignup.aspx.cs">
       <DependentUpon>StudentSignup.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

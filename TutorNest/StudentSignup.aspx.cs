@@ -111,7 +111,6 @@ namespace TutorNest
                     {
                         cmd.CommandType = System.Data.CommandType.StoredProcedure;
 
-                        // Add parameters
                         cmd.Parameters.AddWithValue("@Name", txtName.Text);
                         cmd.Parameters.AddWithValue("@Surname", txtSurname.Text);
                         cmd.Parameters.AddWithValue("@FatherName", txtFatherName.Text);

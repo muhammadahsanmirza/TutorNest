@@ -5,15 +5,16 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace TutorNest.student
+namespace TutorNest
 {
-    public partial class StudentHomeScreen : System.Web.UI.Page
+    public partial class Logout : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["student_username"] == null)
+            if (Session["student_username"] != null)
             {
-                Response.Redirect("../StudentLogin.aspx");
+                Session.Abandon();
+                Response.Redirect("Default.aspx");
             }
         }
     }

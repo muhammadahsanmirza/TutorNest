@@ -9,8 +9,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 80px; 
-    padding: 20px 0; 
+    margin-top: 80px;
+    padding: 20px 0;
 }
 
 .form-container {
@@ -19,7 +19,7 @@
     border-radius: 20px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
     width: 100%;
-    max-width: 1200px; /* Wider form for three columns */
+    max-width: 400px; /* Wider form for three columns */
 }
 
 .form-icon {
