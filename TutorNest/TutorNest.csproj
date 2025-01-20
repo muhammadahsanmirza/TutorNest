@@ -196,6 +196,7 @@
     <Content Include="services.html" />
     <Content Include="StudentSignup.aspx" />
     <Content Include="StudentSignupStylesheet.css" />
+    <Content Include="student\StudentHomeScreen.aspx" />
     <Content Include="team.html" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -258,6 +259,20 @@
     <Compile Include="StudentSignup.aspx.designer.cs">
       <DependentUpon>StudentSignup.aspx</DependentUpon>
     </Compile>
+    <Compile Include="student\StudentDashboard.Master.cs">
+      <DependentUpon>StudentDashboard.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="student\StudentDashboard.Master.designer.cs">
+      <DependentUpon>StudentDashboard.Master</DependentUpon>
+    </Compile>
+    <Compile Include="student\StudentHomeScreen.aspx.cs">
+      <DependentUpon>StudentHomeScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="student\StudentHomeScreen.aspx.designer.cs">
+      <DependentUpon>StudentHomeScreen.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TutorNest.Master.cs">
       <DependentUpon>TutorNest.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -292,6 +307,7 @@
     <Content Include="admin\AdminDashboard.Master" />
     <None Include="packages.config" />
     <Content Include="TutorNest.Master" />
+    <Content Include="student\StudentDashboard.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
