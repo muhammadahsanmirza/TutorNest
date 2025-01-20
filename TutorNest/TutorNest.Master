@@ -27,6 +27,7 @@
     <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet" />
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="dist/sweetalert2.min.css" rel="stylesheet" />

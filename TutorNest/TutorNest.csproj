@@ -194,6 +194,8 @@
     <Content Include="portfolio.html" />
     <Content Include="Readme.txt" />
     <Content Include="services.html" />
+    <Content Include="StudentSignup.aspx" />
+    <Content Include="StudentSignupStylesheet.css" />
     <Content Include="team.html" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -249,6 +251,13 @@
     </Compile>
     <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentSignup.aspx.cs">
+      <DependentUpon>StudentSignup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentSignup.aspx.designer.cs">
+      <DependentUpon>StudentSignup.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TutorNest.Master.cs">
       <DependentUpon>TutorNest.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
