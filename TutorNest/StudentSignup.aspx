@@ -11,12 +11,12 @@
             <div class="form-icon mbw-0">
                 <span><i class="icon icon-notebook"></i></span>
             </div>
-            <!-- Sign up as Tutor Button in Top-Right Corner -->
+           <%-- <!-- Sign up as Tutor Button in Top-Right Corner -->
             <div class="tutor-signup-link text-right mx-0">
                 <asp:HyperLink runat="server" ID="lnkTutorSignup" NavigateUrl="~/TutorSignup.aspx" CssClass="btn btn-sm btn-info">
                     <i class=""></i> Sign up as Tutor
                 </asp:HyperLink>
-            </div>
+            </div>--%>
 
             <h2 class="text-center mx-0">Student Registration</h2>
 

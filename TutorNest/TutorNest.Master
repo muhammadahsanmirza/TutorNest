@@ -54,7 +54,7 @@
                         <li><a href="About.aspx">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="blog.html">Blog</a></li>
-                        <li class="drop-down"><a href="">Drop Down</a>
+                        <%--<li class="drop-down"><a href="">Drop Down</a>
                             <ul>
                                 <li><a href="#">Drop Down 1</a></li>
                                 <li class="drop-down"><a href="#">Drop Down 2</a>
@@ -70,10 +70,22 @@
                                 <li><a href="#">Drop Down 4</a></li>
                                 <li><a href="#">Drop Down 5</a></li>
                             </ul>
-                        </li>
+                        </li>--%>
                         <li><a href="Contact.aspx">Contact Us</a></li>
-                        <li><a href="StudentSignup.aspx" class="btn btn-info mx-2">Signup</a></li>
-                        <li><a href="StudentLogin.aspx" class="btn btn-info mx-2">Login</a></li>
+                        <li class="drop-down btn btn-info mx-2"><a href="#">Login</a>
+                            <ul>
+                                <li><a href="StudentLogin.aspx">Login as Student</a></li>
+                                <li><a href="TutorLogin.aspx">Login as Tutor</a></li>
+                            </ul>
+                        </li>
+                        <li class="drop-down btn btn-info mx-2"><a href="#">Register</a>
+                            <ul>
+                                <li><a href="StudentSignup.aspx">Register as Student</a></li>
+                                <li><a href="TutorSignup.aspx">Register as Tutor</a></li>
+                            </ul>
+                        </li>
+                        <li><%--<a href="StudentLogin.aspx" class="btn btn-info mx-2">Login</a>--%></li>
+                        <li><%--<a href="StudentSignup.aspx" class="btn btn-info mx-2">Signup</a>--%></li>
 
                     </ul>
                 </nav>
@@ -85,8 +97,8 @@
 
 
         <main id="main">
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
         </main>
 
         <!-- ======= Footer ======= -->
@@ -99,7 +111,7 @@
                             <h4>Our Newsletter</h4>
                             <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
                         </div>
-<%--                        <div class="col-lg-6">
+                        <%--                        <div class="col-lg-6">
                             <form action="" method="post">
                                 <input type="email" name="email"><input type="submit" value="Subscribe">
                             </form>

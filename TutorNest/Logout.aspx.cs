@@ -15,6 +15,11 @@ namespace TutorNest
             {
                 Session.Abandon();
                 Response.Redirect("Default.aspx");
+            } 
+            else if (Session["tutor_username"] != null)
+            {
+                Session.Abandon();
+                Response.Redirect("Default.aspx");
             }
         }
     }

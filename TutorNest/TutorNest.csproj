@@ -73,6 +73,7 @@
     <Content Include="admin\AdminLogin.aspx" />
     <Content Include="admin\AdminLoginStyleSheet.css" />
     <Content Include="admin\AdminLogout.aspx" />
+    <Content Include="admin\ViewContact.aspx" />
     <Content Include="assets\css\style.css" />
     <Content Include="assets\img\about.jpg" />
     <Content Include="assets\img\apple-touch-icon.png" />
@@ -196,12 +197,14 @@
     <Content Include="Readme.txt" />
     <Content Include="services.html" />
     <Content Include="StudentLogin.aspx" />
-    <Content Include="StudentLoginStylesheet.css" />
+    <Content Include="LoginStylesheet.css" />
     <Content Include="StudentSignup.aspx" />
     <Content Include="StudentSignupStylesheet.css" />
     <Content Include="student\StudentHomeScreen.aspx" />
     <Content Include="team.html" />
+    <Content Include="TutorLogin.aspx" />
     <Content Include="TutorSignup.aspx" />
+    <Content Include="tutor\TutorHomeScreen.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -239,6 +242,13 @@
     </Compile>
     <Compile Include="admin\AdminLogout.aspx.designer.cs">
       <DependentUpon>AdminLogout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ViewContact.aspx.cs">
+      <DependentUpon>ViewContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ViewContact.aspx.designer.cs">
+      <DependentUpon>ViewContact.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -291,6 +301,13 @@
     <Compile Include="student\StudentHomeScreen.aspx.designer.cs">
       <DependentUpon>StudentHomeScreen.aspx</DependentUpon>
     </Compile>
+    <Compile Include="TutorLogin.aspx.cs">
+      <DependentUpon>TutorLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TutorLogin.aspx.designer.cs">
+      <DependentUpon>TutorLogin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TutorNest.Master.cs">
       <DependentUpon>TutorNest.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -304,6 +321,20 @@
     </Compile>
     <Compile Include="TutorSignup.aspx.designer.cs">
       <DependentUpon>TutorSignup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tutor\TutorDashboard.Master.cs">
+      <DependentUpon>TutorDashboard.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutor\TutorDashboard.Master.designer.cs">
+      <DependentUpon>TutorDashboard.Master</DependentUpon>
+    </Compile>
+    <Compile Include="tutor\TutorHomeScreen.aspx.cs">
+      <DependentUpon>TutorHomeScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutor\TutorHomeScreen.aspx.designer.cs">
+      <DependentUpon>TutorHomeScreen.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -333,6 +364,7 @@
     <None Include="packages.config" />
     <Content Include="TutorNest.Master" />
     <Content Include="student\StudentDashboard.Master" />
+    <Content Include="tutor\TutorDashboard.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

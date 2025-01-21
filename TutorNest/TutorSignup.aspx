@@ -11,14 +11,13 @@
             <!-- Icon at the top -->
             <div class="form-icon mb-0">
                 <span><i class="fas fa-graduation-cap"></i></span>
-                <!-- FontAwesome graduation cap icon -->
             </div>
             <!-- Sign up as Student Button in Top-Right Corner -->
-            <div class="tutor-signup-link text-right mx-0">
+           <%-- <div class="tutor-signup-link text-right mx-0">
                 <asp:HyperLink runat="server" ID="lnkTutorSignup" NavigateUrl="~/StudentSignup.aspx" CssClass="btn btn-sm btn-info">
                     <i class=""></i>Sign up as Student
                 </asp:HyperLink>
-            </div>
+            </div>--%>
 
             <h2 class="text-center mx-0">Tutor Registration</h2>
             <!-- First Row: Name, Surname, Age -->
