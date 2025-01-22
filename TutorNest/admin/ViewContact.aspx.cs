@@ -12,6 +12,10 @@ namespace TutorNest.admin
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["admin_username"] == null)
+            {
+                Response.Redirect("AdminLogin.aspx");
+            }
             if (!IsPostBack)
             {
                 BindGridView();
@@ -80,30 +84,43 @@ namespace TutorNest.admin
         protected void GridView1_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
             int id = Convert.ToInt32(GridView1.DataKeys[e.RowIndex].Value);
-            string name = (GridView1.Rows[e.RowIndex].FindControl("txtName") as TextBox).Text;
-            string email = (GridView1.Rows[e.RowIndex].FindControl("txtEmail") as TextBox).Text;
-            string phone = (GridView1.Rows[e.RowIndex].FindControl("txtPhone") as TextBox).Text;
-            string subject = (GridView1.Rows[e.RowIndex].FindControl("txtSubject") as TextBox).Text;
-            string message = (GridView1.Rows[e.RowIndex].FindControl("txtMessage") as TextBox).Text;
 
-            using (SqlConnection con = new SqlConnection(CS))
+            // Find the controls in the GridView row
+            TextBox txtName = (TextBox)GridView1.Rows[e.RowIndex].FindControl("txtName");
+            TextBox txtEmail = (TextBox)GridView1.Rows[e.RowIndex].FindControl("txtEmail");
+            DropDownList ddlSubject = (DropDownList)GridView1.Rows[e.RowIndex].FindControl("ddlSubject"); // Correctly find the DropDownList
+            TextBox txtMessage = (TextBox)GridView1.Rows[e.RowIndex].FindControl("txtMessage");
+
+            if (txtName != null && txtEmail != null && ddlSubject != null && txtMessage != null)
             {
-                using (SqlCommand cmd = new SqlCommand("UPDATE tbl_contact SET name=@name, email=@email, phone=@phone, subject=@subject, message=@message WHERE id=@id", con))
-                {
-                    cmd.Parameters.AddWithValue("@id", id);
-                    cmd.Parameters.AddWithValue("@name", name);
-                    cmd.Parameters.AddWithValue("@email", email);
-                    cmd.Parameters.AddWithValue("@phone", phone);
-                    cmd.Parameters.AddWithValue("@subject", subject);
-                    cmd.Parameters.AddWithValue("@message", message);
-                    con.Open();
-                    cmd.ExecuteNonQuery();
-                    con.Close();
-                }
-            }
+                string name = txtName.Text;
+                string email = txtEmail.Text;
+                string subject = ddlSubject.SelectedValue; // Get selected value from DropDownList
+                string message = txtMessage.Text;
 
-            GridView1.EditIndex = -1;
-            BindGridView();
+                using (SqlConnection con = new SqlConnection(CS))
+                {
+                    using (SqlCommand cmd = new SqlCommand("UPDATE tbl_contact SET name=@name, emil=@email, subject=@subject, message=@message WHERE id=@id", con))
+                    {
+                        cmd.Parameters.AddWithValue("@id", id);
+                        cmd.Parameters.AddWithValue("@name", name);
+                        cmd.Parameters.AddWithValue("@email", email);
+                        cmd.Parameters.AddWithValue("@subject", subject);
+                        cmd.Parameters.AddWithValue("@message", message);
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                        con.Close();
+                    }
+                }
+
+                GridView1.EditIndex = -1; // Exit edit mode
+                BindGridView(); // Rebind data to reflect changes
+            }
+            else
+            {
+                // Handle the case where controls are not found
+                throw new Exception("One or more controls could not be found.");
+            }
         }
 
         // Cancel Edit
