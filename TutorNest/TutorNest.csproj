@@ -201,6 +201,7 @@
     <Content Include="StudentSignup.aspx" />
     <Content Include="StudentSignupStylesheet.css" />
     <Content Include="student\StudentHomeScreen.aspx" />
+    <Content Include="student\ViewTutors.aspx" />
     <Content Include="team.html" />
     <Content Include="TutorLogin.aspx" />
     <Content Include="TutorSignup.aspx" />
@@ -300,6 +301,13 @@
     </Compile>
     <Compile Include="student\StudentHomeScreen.aspx.designer.cs">
       <DependentUpon>StudentHomeScreen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="student\ViewTutors.aspx.cs">
+      <DependentUpon>ViewTutors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="student\ViewTutors.aspx.designer.cs">
+      <DependentUpon>ViewTutors.aspx</DependentUpon>
     </Compile>
     <Compile Include="TutorLogin.aspx.cs">
       <DependentUpon>TutorLogin.aspx</DependentUpon>
