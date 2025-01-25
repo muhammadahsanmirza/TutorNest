@@ -50,8 +50,6 @@
                     <ul>
                         <li class="active"><a href="Default.aspx">Home</a></li>
                         <li><a href="About.aspx">About Us</a></li>
-                        <li><a href="#services">Services</a></li>
-
                         <li><a href="Contact.aspx">Contact Us</a></li>
                         <li class="drop-down btn btn-info mx-2"><a href="#">Login</a>
                             <ul>

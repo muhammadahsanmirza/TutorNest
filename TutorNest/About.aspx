@@ -24,7 +24,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <img src="assets/img/about.jpg" class="img-fluid" alt="About Tutor Nest">
+                    <img src="./assets/img/xyz.jpg" class="img-fluid" alt="About Tutor Nest">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0">
                     <h3>Empowering Learners and Tutors Worldwide</h3>

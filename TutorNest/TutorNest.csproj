@@ -75,25 +75,16 @@
     <Content Include="admin\AdminLogout.aspx" />
     <Content Include="admin\ViewContact.aspx" />
     <Content Include="assets\css\style.css" />
-    <Content Include="assets\img\about.jpg" />
     <Content Include="assets\img\apple-touch-icon.png" />
     <Content Include="assets\img\blog-author.jpg" />
     <Content Include="assets\img\blog-post-1.jpg" />
     <Content Include="assets\img\blog-post-2.jpg" />
     <Content Include="assets\img\blog-post-3.jpg" />
     <Content Include="assets\img\blog-post-4.jpg" />
-    <Content Include="assets\img\comments-1.jpg" />
-    <Content Include="assets\img\comments-2.jpg" />
-    <Content Include="assets\img\comments-3.jpg" />
-    <Content Include="assets\img\comments-4.jpg" />
-    <Content Include="assets\img\comments-5.jpg" />
-    <Content Include="assets\img\comments-6.jpg" />
-    <Content Include="assets\img\favicon.png" />
     <Content Include="assets\img\features-1.svg" />
     <Content Include="assets\img\features-2.svg" />
     <Content Include="assets\img\features-3.svg" />
     <Content Include="assets\img\features-4.svg" />
-    <Content Include="assets\img\hero-bg.jpg" />
     <Content Include="assets\img\portfolio\portfolio-1.jpg" />
     <Content Include="assets\img\portfolio\portfolio-2.jpg" />
     <Content Include="assets\img\portfolio\portfolio-3.jpg" />
@@ -206,6 +197,7 @@
     <Content Include="TutorLogin.aspx" />
     <Content Include="TutorSignup.aspx" />
     <Content Include="tutor\TutorHomeScreen.aspx" />
+    <Content Include="tutor\ViewStudents.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -343,6 +335,13 @@
     </Compile>
     <Compile Include="tutor\TutorHomeScreen.aspx.designer.cs">
       <DependentUpon>TutorHomeScreen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tutor\ViewStudents.aspx.cs">
+      <DependentUpon>ViewStudents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutor\ViewStudents.aspx.designer.cs">
+      <DependentUpon>ViewStudents.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
