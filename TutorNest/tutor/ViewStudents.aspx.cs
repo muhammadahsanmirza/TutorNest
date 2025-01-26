@@ -31,11 +31,9 @@ namespace TutorNest.tutor
                     DataTable dt = new DataTable();
                     da.Fill(dt);
 
-                    // Bind data to Repeater
                     rptStudents.DataSource = dt;
                     rptStudents.DataBind();
 
-                    // Show SweetAlert if no records are found
                     if (dt.Rows.Count == 0 && !string.IsNullOrEmpty(searchText))
                     {
                         ScriptManager.RegisterStartupScript(this, GetType(), "showAlert", "showAlert('No students found matching your search criteria.');", true);
@@ -51,7 +49,6 @@ namespace TutorNest.tutor
             string searchText = txtSearch.Text.Trim();
             BindStudents(searchText);
 
-            // Check if no records are found
             if (rptStudents.Items.Count == 0 && !string.IsNullOrEmpty(searchText))
             {
                 ScriptManager.RegisterStartupScript(this, GetType(), "showAlert", "showAlert('No students found matching your search criteria.');", true);

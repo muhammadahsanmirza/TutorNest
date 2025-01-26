@@ -44,7 +44,7 @@
                         <Columns>
                             <asp:TemplateField HeaderText="View">
                                 <ItemTemplate>
-                                    <asp:LinkButton runat="server" CssClass="btn btn-info btn-sm" OnClientClick='<%# "showDetails(\"" + Eval("name") + "\", \"" + Eval("email") + "\", \"" + Eval("subject") + "\", \"" + Eval("message") + "\"); return false;" %>'>
+                                    <asp:LinkButton runat="server" CssClass="btn btn-info btn-sm" OnClientClick='<%# "showDetails(\"" + Eval("name") + "\", \"" + Eval("emil") + "\", \"" + Eval("subject") + "\", \"" + Eval("message") + "\"); return false;" %>'>
                                 <i class="fas fa-eye"></i>
                                     </asp:LinkButton>
                                 </ItemTemplate>
@@ -66,7 +66,7 @@
 
                             <asp:TemplateField HeaderText="Email">
                                 <ItemTemplate>
-                                    <asp:Label ID="lblEmail" runat="server" Text='<%# Eval("email") %>'></asp:Label>
+                                    <asp:Label ID="lblEmail" runat="server" Text='<%# Eval("emil") %>'></asp:Label>
                                 </ItemTemplate>
                                 <EditItemTemplate>
                                     <asp:TextBox ID="txtEmail" runat="server" Text='<%# Bind("email") %>'></asp:TextBox>

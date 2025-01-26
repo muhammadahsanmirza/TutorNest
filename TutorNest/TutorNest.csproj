@@ -68,7 +68,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-    <Content Include="about.html" />
     <Content Include="admin\AdminHomeScreen.aspx" />
     <Content Include="admin\AdminLogin.aspx" />
     <Content Include="admin\AdminLoginStyleSheet.css" />
@@ -163,11 +162,8 @@
     <Content Include="assets\vendor\waypoints\jquery.waypoints.min.js" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
-    <Content Include="blog-single.html" />
-    <Content Include="blog.html" />
     <Content Include="changelog.txt" />
     <Content Include="Contact.aspx" />
-    <Content Include="contact.html" />
     <Content Include="Default.aspx" />
     <Content Include="dist\sweetalert2.all.js" />
     <Content Include="dist\sweetalert2.all.min.js" />
@@ -180,13 +176,7 @@
     <Content Include="dist\sweetalert2.min.css" />
     <Content Include="dist\sweetalert2.min.js" />
     <Content Include="forms\Readme.txt" />
-    <Content Include="index-2.html" />
-    <Content Include="index.html" />
     <Content Include="Logout.aspx" />
-    <Content Include="portfolio-details.html" />
-    <Content Include="portfolio.html" />
-    <Content Include="Readme.txt" />
-    <Content Include="services.html" />
     <Content Include="StudentLogin.aspx" />
     <Content Include="LoginStylesheet.css" />
     <Content Include="StudentSignup.aspx" />
